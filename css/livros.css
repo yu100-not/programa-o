@@ -1,0 +1,131 @@
+/* LINHA PARA ALGUMAS LOMBADAS (COMO A PENGUIN CLASSICS)*/
+
+        #reideamarelo::before{
+            content: "";
+
+            position: absolute;
+
+            opacity: var(--linha_opacidade);
+
+            left: var(--linha_x);
+            top: var(--linha_y);
+
+            width: var(--linha_largura);
+            height: var(--linha_altura);
+
+            background:
+                linear-gradient(
+                    to bottom,
+                    transparent,
+                    rgba(233, 6, 6, 0.959),
+                    var(--linha_cor)
+
+                );
+        }
+
+        #odisseia::before{
+            content: "";
+
+            position: absolute;
+
+            opacity: var(--linha_opacidade);
+
+            left: var(--linha_x);
+            top: var(--linha_y);
+
+            width: var(--linha_largura);
+            height: var(--linha_altura);
+
+            background: var(--linha_cor);
+        }
+
+        /* IDS AQUI EMBAIXO (por favor nao esqueça >:3 */
+
+        #titulo_reideamarelo {
+            font-size: 15px;
+            letter-spacing: -7px;
+        }
+
+        #autor_RWC {
+
+            writing-mode: horizontal-tb;
+            text-orientation: mixed;
+
+            font-size: 5px;
+        }
+
+        #editora_PENGUIN {
+            padding: 0;
+            width: 30%;
+            height: 8%;
+            border-radius: 70%;
+            border: 1px solid black;
+            background: rgb(255, 123, 0);
+            line-height: 1;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #nome_editora {
+            writing-mode: horizontal-tb;
+            text-orientation: sideways;
+            color: whitesmoke;
+
+            font-family: Freemono, monospace;
+            font-size: 3px;
+            letter-spacing: 1.5px;
+
+            position: absolute;
+            left: 50%;
+            top: 85%;
+        }
+
+        #titulo_odisseia {
+            font-size: 7px;
+            font-style: oblique;
+            font-family: serif;
+            color: whitesmoke;
+        }
+
+        #autor_homero {
+            font-size: 8px;
+            font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+            color: orangered;
+            letter-spacing: 1.5px;
+        }
+
+        #parte {
+            font-size: 7px;
+            position: absolute;
+
+            top: 35%;
+            left: 50%;
+
+            color: whitesmoke;
+        }
+
+        #goethe {
+            font-size: 7px;
+        }
+
+        #titulo_fausto {
+            font-size: 15px;
+            font-style:italic;
+            letter-spacing: 1px;
+        }
+
+        #titulo_metamorfose, #autor_metamorfose {
+            color: black;
+        }
+
+        #autor_herman {
+            font-size: 10px;
+        }
+
+        #retrato {
+            font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+            font-size: 6px;
+            letter-spacing:4px;
+        }

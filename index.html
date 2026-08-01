@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livro versão 1.0</title>
+
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/livros.css">
+    <link rel="stylesheet" href="css/animations.css"> 
+
+    <link href="https://fonts.googleapis.com/css2?family=Norican&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<div class="estante">
+
+        <div class="prateleira">
+            <div class="livro" id="crime" onclick="abrirLivro('crime')" style="
+                --cor: rgb(24, 18, 18);
+
+                --altura: 250px;
+                --grossura: 55px;
+
+                --linha_opacidade: 0;
+                --linha_x: 10%;
+                --linha_y: 10%;
+                --linha_altura: 10px;
+                --linha_largura: 1px;
+                --linha_cor: rgba(219, 146, 10, 0.76);
+
+                --tamanho: 7.5px;
+                --fonte: serif;
+                --white_space: nowrap;
+                --rotate: 90deg;
+                --escrita: horizontal-tb;
+                --text_orientation: mixed;
+                --cor_texto:rgb(255, 255, 255);
+
+                --titulo-y: 20%;
+                --autor-y: 70%;
+                --editora-y: 93%;
+            ">
+
+                <p class="titulo">CRIME E CASTIGO</p>
+                <p class='editora'>⬜</p>
+                <p class="autor">FIODOR DOSTOIEVSKI</p>
+
+            </div>
+
+            <div class="livro" id="idiota" style="
+                --cor: rgb(24, 18, 18);
+
+                --altura: 250px;
+                --grossura: 60px;
+
+                --linha_opacidade: 0;
+                --linha_x: 10%;
+                --linha_y: 10%;
+                --linha_altura: 10px;
+                --linha_largura: 1px;
+                --linha_cor: rgba(219, 146, 10, 0.76);
+
+                --tamanho: 7.5px;
+                --fonte: serif;
+                --white_space: nowrap;
+                --rotate: 90deg;
+                --escrita: horizontal-tb;
+                --text_orientation: mixed;
+                --cor_texto:white;
+
+                --titulo-y: 20%;
+                --autor-y: 70%;
+                --editora-y: 93%;
+            ">
+
+                <p class="titulo">O IDIOTA</p>
+                <p class='editora'>⬜</p>
+                <p class="autor">FIODOR DOSTOIEVSKI</p>
+
+            </div>
+                
+
+           <div class="livro" id="irmaos" style="
+                --cor: rgba(177, 42, 42, 0.925);
+
+                --altura: 250px;
+                --grossura: 70px;
+
+                --linha_opacidade: 0;
+                --linha_x: 10%;
+                --linha_y: 10%;
+                --linha_altura: 10px;
+                --linha_largura: 1px;
+                --linha_cor: rgba(219, 146, 10, 0.76);
+
+                --tamanho: 8px;
+                --fonte: serif;
+                --white_space: nowrap;
+                --rotate: 90deg;
+                --escrita: horizontal-tb;
+                --text_orientation: mixed;
+                --cor_texto:white;
+
+                --titulo-y: 22%;
+                --autor-y: 70%;
+                --editora-y: 92%;
+            ">
+
+                <p class="titulo">OS IRMÃOS KARAMAZÓV</p>
+                <p class='editora'>⬜</p>
+                <p class="autor">FIODOR DOSTOIEVSKI</p>
+
+            </div>
+
+            <div class="livro" id="reideamarelo" style="
+                --cor: rgba(3, 2, 0, 0.788);
+
+                --altura: 250px;
+                --grossura: 40px;
+
+                --linha_opacidade: 1;
+                --linha_x: 45%;
+                --linha_y: 40%;
+                --linha_altura: 40%;
+                --linha_largura: 3px;
+                --linha_cor: rgb(219, 10, 10);
+
+                --tamanho: 10px;
+                --fonte: Georgia, serif;
+                --white_space: nowrap;
+                --rotate: 0deg;
+                --escrita: vertical-lr;
+                --text_orientation: upright;
+                --cor_texto:white;
+
+                --titulo-y: 10%;
+                --autor-y: 35%;
+                --editora-y: 85%;
+            ">
+
+                <p class="titulo" id="titulo_reideamarelo">R 👑 C</p>
+                <p class='editora'>💀</p>
+                <p class="autor" id="autor_RWC">Robert w. <br> Chambers</p>
+
+            </div>
+
+            <div class="livro" id='odisseia' style="
+                --cor: rgba(3, 2, 0, 0.788);
+
+                --altura: 220px;
+                --grossura: 40px;
+
+                --linha_opacidade: 1;
+                --linha_x: 0%;
+                --linha_y: 60%;
+                --linha_altura: 10%;
+                --linha_largura: 100%;
+                --linha_cor: rgb(255, 255, 255);
+
+                --tamanho: 10px;
+                --fonte: Georgia, serif;
+                --white_space: nowrap;
+                --rotate: -90deg;
+                --escrita: horizontal-tb;
+                --text_orientation: mixed;
+
+                --titulo-y: 35%;
+                --autor-y: 13%;
+                --editora-y: 61%;
+            ">
+
+                <p class="titulo" id="titulo_odisseia">Odisseia</p>
+                <p class='editora'id="editora_PENGUIN">🐧</p>
+                <p id="nome_editora">PENGUIN CLASSICS</p>
+                <p class="autor" id="autor_homero">HOMERO</p>
+
+            </div>
+
+            <div class="livro" id='fausto' style="
+                --cor: rgba(235, 177, 63, 0.788);
+
+                --altura: 260px;
+                --grossura: 40px;
+
+                --linha_opacidade: 0;
+                --linha_x: 0%;
+                --linha_y: 60%;
+                --linha_altura: 10%;
+                --linha_largura: 100%;
+                --linha_cor: rgb(255, 255, 255);
+
+                --tamanho: 6px;
+                --fonte: Didot, serif;
+                --white_space: nowrap;                                      
+                --rotate: 90deg;
+                --escrita: horizontal-tb;
+                --text_orientation: mixed;
+                --cor_texto:white;
+
+                --titulo-y: 10%;
+                --autor-y: 70%;
+                --editora-y: 94%;
+            ">
+
+                <p class="titulo" id="titulo_fausto">Fausto</p>
+                <p class='editora'>⬜</p>
+                <p id="parte">Primeira Parte</p>
+                <p class="autor" id="goethe">Johann Wolfgang Von Goethe</p>
+
+            </div>
+
+            <div class="livro" id='fausto2' style="
+                --cor: rgba(223, 222, 220, 0.788);
+
+                --altura: 260px;
+                --grossura: 90px;
+
+                --linha_opacidade: 0;
+                --linha_x: 0%;
+                --linha_y: 60%;
+                --linha_altura: 10%;
+                --linha_largura: 100%;
+                --linha_cor: rgb(255, 255, 255);
+
+                --tamanho: 6px;
+                --fonte: Didot, serif;
+                --white_space: nowrap;                                      
+                --rotate: 90deg;
+                --escrita: horizontal-tb;
+                --text_orientation: mixed;
+                --cor_texto:white;
+
+                --titulo-y: 10%;
+                --autor-y: 70%;
+                --editora-y: 94%;
+            ">
+
+                <p class="titulo" id="titulo_fausto">Fausto</p>
+                <p class='editora'>⬜</p>
+                <p id="parte">Segunda Parte</p>
+                <p class="autor" id="goethe">Johann Wolfgang Von Goethe</p>
+
+            </div>
+
+            <div class="livro" id="ocapote" style="
+                --cor: rgb(43, 139, 51);
+
+                --altura: 225px;
+                --grossura: 20px;
+
+                --linha_opacidade: 0;
+                --linha_x: 10%;
+                --linha_y: 10%;
+                --linha_altura: 10px;
+                --linha_largura: 1px;
+                --linha_cor: rgba(219, 146, 10, 0.76);
+
+                --tamanho: 7.5px;
+                --fonte: serif;
+                --white_space: nowrap;
+                --rotate: 90deg;
+                --escrita: horizontal-tb;
+                --text_orientation: mixed;
+                --cor_texto:white;
+
+                --titulo-y: 20%;
+                --autor-y: 70%;
+                --editora-y: 93%;
+            ">
+
+                <p class="titulo">O CAPOTE</p>
+                <p class='editora'>⬜</p>
+                <p class="autor">NIKOLAI GOGOL</p>
+
+            </div>
+
+            <div class="livro" id="memorias" style="
+                --cor: rgb(139, 43, 43);
+
+                --altura: 225px;
+                --grossura: 20px;
+
+                --linha_opacidade: 0;
+                --linha_x: 10%;
+                --linha_y: 10%;
+                --linha_altura: 10px;
+                --linha_largura: 1px;
+                --linha_cor: rgba(219, 146, 10, 0.76);
+
+                --tamanho: 6px;
+                --fonte: serif;
+                --white_space: nowrap;
+                --rotate: 90deg;
+                --escrita: horizontal-tb;
+                --text_orientation: mixed;
+                --cor_texto:white;
+
+                --titulo-y: 25%;
+                --autor-y: 70%;
+                --editora-y: 93%;
+            ">
+
+                <p class="titulo">MEMÓRIAS DO SUBSOLO</p>
+                <p class='editora'>⬜</p>
+                <p class="autor">FIODOR DOSTOIEVSKI</p>
+
+            </div>
+
+           <div class="livro" id="metamorfose" style="
+                --cor: rgb(22, 88, 22);
+
+                --altura: 270px;
+                --grossura: 10px;
+
+                --linha_opacidade: 0;
+                --linha_x: 10%;
+                --linha_y: 10%;
+                --linha_altura: 10px;
+                --linha_largura: 1px;
+                --linha_cor: rgba(219, 146, 10, 0.76);
+
+                --tamanho: 6px;
+                --fonte: serif;
+                --white_space: nowrap;
+                --rotate: 90deg;
+                --escrita: horizontal-tb;
+                --text_orientation: mixed;
+                --cor_texto: black;
+
+                --titulo-y: 25%;
+                --autor-y: 70%;
+                --editora-y: 93%;
+            ">
+
+                <p class="titulo" id="titulo_metamorfose">METAMORFOSE</p>
+                <p class='editora'>💫</p>
+                <p class="autor" id="autor_metamorfose">FRANZ KAFKA</p>
+
+            </div>
+
+            <div class="livro" id="inferno" style="
+                --cor: rgb(196, 9, 9);
+
+                --altura: 250px;
+                --grossura: 25px;
+
+                --linha_opacidade: 0;
+                --linha_x: 10%;
+                --linha_y: 10%;
+                --linha_altura: 10px;
+                --linha_largura: 1px;
+                --linha_cor: rgba(219, 146, 10, 0.76);
+
+                --tamanho: 6px;
+                --fonte: Playfair Display serif;
+                --white_space: nowrap;
+                --rotate: 90deg;
+                --escrita: horizontal-tb;
+                --text_orientation: mixed;
+                --cor_texto: white;
+
+                --titulo-y: 25%;
+                --autor-y: 70%;
+                --editora-y: 93%;
+            ">
+
+                <p class="titulo">A DIVINA COMÉDIA - INFERNO</p>
+                <p class='editora'>⬜</p>
+                <p class="autor">DANTE ALIGHERI</p>
+
+            </div>
+
+            <div class="livro" id="purgatorio" style="
+                --cor: rgb(33, 88, 2);
+
+                --altura: 250px;
+                --grossura: 25px;
+
+                --linha_opacidade: 0;
+                --linha_x: 10%;
+                --linha_y: 10%;
+                --linha_altura: 10px;
+                --linha_largura: 1px;
+                --linha_cor: rgba(219, 146, 10, 0.76);
+
+                --tamanho: 6px;
+                --fonte: Playfair Display serif;
+                --white_space: nowrap;
+                --rotate: 90deg;
+                --escrita: horizontal-tb;
+                --text_orientation: mixed;
+                --cor_texto: white;
+
+                --titulo-y: 25%;
+                --autor-y: 70%;
+                --editora-y: 93%;
+            ">
+
+                <p class="titulo">A DIVINA COMÉDIA - PURGATORIO</p>
+                <p class='editora'>⬜</p>
+                <p class="autor">DANTE ALIGHERI</p>
+
+            </div>
+
+            <div class="livro" id="paraiso" style="
+                --cor: rgb(16, 8, 138);
+
+                --altura: 250px;
+                --grossura: 25px;
+
+                --linha_opacidade: 0;
+                --linha_x: 10%;
+                --linha_y: 10%;
+                --linha_altura: 10px;
+                --linha_largura: 1px;
+                --linha_cor: rgba(219, 146, 10, 0.76);
+
+                --tamanho: 6px;
+                --fonte: Playfair Display serif;
+                --white_space: nowrap;
+                --rotate: 90deg;
+                --escrita: horizontal-tb;
+                --text_orientation: mixed;
+                --cor_texto: white;
+
+                --titulo-y: 25%;
+                --autor-y: 70%;
+                --editora-y: 93%;
+            ">
+
+                <p class="titulo">A DIVINA COMÉDIA - PARAÍSO</p>
+                <p class='editora'>⬜</p>
+                <p class="autor">DANTE ALIGHERI</p>
+
+            </div>
+
+            <div class="livro" id="mobydick" style="
+                --cor: rgb(221, 206, 172);
+
+                --altura: 250px;
+                --grossura: 45px;
+
+                --linha_opacidade: 0;
+                --linha_x: 10%;
+                --linha_y: 10%;
+                --linha_altura: 10px;
+                --linha_largura: 1px;
+                --linha_cor: rgba(219, 146, 10, 0.76);
+
+                --tamanho: 20px;
+                --fonte: Norican;
+                --white_space: nowrap;
+                --rotate: 90deg;
+                --escrita: horizontal-tb;
+                --text_orientation: mixed;
+                --cor_texto: black;
+
+                --titulo-y: 30%;
+                --autor-y: 75%;
+                --editora-y: 93%;
+            ">
+
+                <p class="titulo" ID="titulo_mobydick">MOBY DICK</p>
+                <p class="autor" id="autor_herman">HERMAN <br> MELVILLE</p>
+
+            </div>
+
+            <div class="livro" id="doriangray" style="
+                --cor: rgb(44, 30, 2);
+
+                --altura: 250px;
+                --grossura: 34px;
+
+                --linha_opacidade: 1;
+                --linha_x: 10%;
+                --linha_y: 10%;
+                --linha_altura: 90%;
+                --linha_largura: 3px;
+                --linha_cor: rgba(54, 35, 10, 0.76);
+
+                --tamanho: 15px;
+                --fonte: monospace;
+                --white_space: nowrap;
+                --rotate: -90deg;
+                --escrita: horizontal-tb;
+                --text_orientation: mixed;
+                --cor_texto: white;
+
+                --titulo-y: 25%;
+                --autor-y: 70%;
+                --editora-y: 90%;
+            ">
+
+                <p class="titulo" id="retrato">DARKSIDE</p>
+                <p class='editora'>💀</p>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>    
+    <script src="js/livro.js"></script>
+
+    
+</body>
+</html>
