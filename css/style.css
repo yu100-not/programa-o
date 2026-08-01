@@ -220,22 +220,26 @@
 
             .prateleira {
                 width: 100%;
+                min-height: 320px;
                 height: auto;
                 margin: 0;
                 padding: 12px 8px;
                 flex-wrap: wrap;
                 justify-content: center;
-                align-items: flex-start;
+                align-items: flex-end;
                 gap: 8px;
             }
 
             .livro {
                 width: calc(var(--grossura) * 0.8);
                 height: calc(var(--altura) * 0.8);
+                flex-shrink: 0;
             }
 
             .livro p {
                 font-size: calc(var(--tamanho) * 0.8);
+                line-height: 1.1;
+                overflow: hidden;
             }
 
             .livro:hover {
