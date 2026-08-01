@@ -5,6 +5,7 @@ body {
     align-items: center;
 
     min-height: 100vh;
+    padding: 24px;
 
     opacity: 0;
     animation: aparecer .6s ease forwards;
@@ -43,12 +44,14 @@ body.saindo .analise_livro{
 
     position: relative; 
 
-    width: 70%;
+    width: min(1100px, 100%);
     min-height: 600px;
+    padding: 70px 40px 40px;
 
     background: #f5e6c8;
 
     display: flex;
+    gap: 30px;
 
     box-shadow: 0 10px 30px rgba(0,0,0,0.4);
     border: 5px solid black;
@@ -59,7 +62,7 @@ body.saindo .analise_livro{
 .direita {
 
     width: 50%;
-    padding: 40px;
+    padding: 0;
 }
 
 .direita {
@@ -77,7 +80,8 @@ body.saindo .analise_livro{
 
 .capa img {
 
-    width: 180px;
+    width: 220px;
+    height: auto;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
 
 }
@@ -102,7 +106,7 @@ p {
 
 .nota .jefferson {
     width: 70%;
-    height: 70%;
+    height: 60%;
 
    transform: rotate(30);
    transform:translateX(60%);
@@ -119,22 +123,72 @@ p {
 .voltar {
     position: absolute;
 
-    top: -10%;
-    left: -20%;
+    top: 20px;
+    left: 20px;
 
-    width: 10%;
-    height:10%;
+    width: auto;
+    height: auto;
+    padding: 10px 16px;
 
     text-decoration: none;
 
-    color: black;
+    color: #fff;
+    background: #3d2b1acb;
+    border: none;
+    border-radius: 8px;
 
-    font-size: 20px;
-    border-radius: 6%;
+    font-size: 16px;
+    font-weight: 600;
 
     transition: .3s;
+    z-index: 2;
 }
 
 .voltar:hover {
     transform: translateX(-8px);
+}
+@media (max-width: 768px) {
+    body {
+        padding: 12px;
+        align-items: flex-start;
+    }
+
+    .analise_livro {
+        width: 100%;
+        min-height: auto;
+        padding: 70px 18px 24px;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .esquerda,
+    .direita {
+        width: 100%;
+    }
+
+    .direita {
+        border-left: none;
+        border-top: 3px solid rgba(80, 50, 30, 0.63);
+        padding-top: 24px;
+    }
+
+    .conteudo-esquerda {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .capa img {
+        width: 180px;
+    }
+
+    .voltar {
+        top: 12px;
+        left: 12px;
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 18px;
+    }
 }
