@@ -32,8 +32,8 @@
 
         .estante {
             height: 400px;
-            min-width: 50%;
-            width: 60%;
+            min-width: 60%;
+            width: 70%;
             background-color:rgba(56, 34, 14, 0.774);
             border-radius: 2%;
             margin: 50px auto;
@@ -45,7 +45,7 @@
 
         .prateleira {
             height: 350px;
-            width: 950px;
+            width: 95%;
             margin: 50px auto;
             margin-top: 23px;
             border-radius: 2%;
