@@ -150,6 +150,7 @@ p {
 
 .voltar:hover {
     transform: translateX(-8px);
+    cursor: pointer;
 }
 
                                         /* PHONE STUFF!*/
