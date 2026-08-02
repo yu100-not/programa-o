@@ -32,7 +32,6 @@
 
         .estante {
             height: 400px;
-            min-width: 55%;
             width: 55%;
             background-color:rgba(56, 34, 14, 0.774);
             border-radius: 2%;
